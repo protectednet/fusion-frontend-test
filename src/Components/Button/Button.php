@@ -1,7 +1,9 @@
 <?php
 namespace ProtectedNet\FrontendTest\Components\Button;
 
-use Packaged\Glimpse\Tags\Div;use ProtectedNet\FrontendTest\Components\AbstractComponent;
+use Packaged\Glimpse\Tags\Div;
+use Packaged\SafeHtml\SafeHtml;
+use ProtectedNet\FrontendTest\Components\AbstractComponent;
 
 class Button extends AbstractComponent
 {
@@ -89,7 +91,7 @@ class Button extends AbstractComponent
           Div::create($this->_content)->addClass($this->getElementName('content-holder'))
         )->addClass('cell', 'auto', $this->_iconRight ?: 'small-order-2'),
         Div::create(
-          Div::create($this->_icon)->addClass($this->getElementName('icon-holder'))
+          Div::create(new SafeHtml($this->_icon))->addClass($this->getElementName('icon-holder'))
         )->addClass('cell', 'shrink', $this->_iconRight ?: 'small-order-1')
       )->addClass('grid-x');
     }

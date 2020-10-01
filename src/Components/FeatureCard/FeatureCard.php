@@ -1,6 +1,10 @@
 <?php
 namespace ProtectedNet\FrontendTest\Components\FeatureCard;
 
+use Packaged\Glimpse\Tags\Div;
+use Packaged\Glimpse\Tags\Text\HeadingFive;
+use Packaged\Glimpse\Tags\Text\HeadingFour;
+use Packaged\Glimpse\Tags\Text\Paragraph;
 use Packaged\SafeHtml\ISafeHtmlProducer;
 use ProtectedNet\FrontendTest\Components\AbstractComponent;
 use ProtectedNet\FrontendTest\Enum\Breakpoints;
@@ -234,4 +238,24 @@ class FeatureCard extends AbstractComponent
       $this->_addModifier($classname);
     }
   }
+
+  protected function _getContentForRender()
+  {
+    $icon = null;
+
+    if($this->getIcon())
+    {
+      $icon = Div::create($this->getIcon()->produceSafeHTML())
+        ->addClass($this->getElementName('icon'));
+    }
+
+    $content = Div::create(
+      ($this->getTitle() ? HeadingFour::create($this->getTitle())->addClass($this->getElementName('title')) : null),
+      ($this->getSubtitle() ? HeadingFive::create($this->getSubtitle())->addClass($this->getElementName('subtitle')) : null),
+      ($this->getDescription() ? Paragraph::create($this->getDescription())->addClass($this->getElementName('description')) : null)
+    )->addClass($this->getElementName('content'));
+
+    return  [$icon, $content];
+  }
+
 }
