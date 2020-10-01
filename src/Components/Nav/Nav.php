@@ -3,8 +3,14 @@ namespace ProtectedNet\FrontendTest\Components\Nav;
 
 use Exception;
 use Packaged\Dispatch\ResourceManager;
-use Packaged\SafeHtml\ISafeHtmlProducer;
+use Packaged\Glimpse\Tags\Div;
+use Packaged\Glimpse\Tags\Lists\ListItem;
+use Packaged\Glimpse\Tags\Lists\UnorderedList;
+use Packaged\Glimpse\Tags\Media\Image;
+use Packaged\Glimpse\Tags\Span;
 use ProtectedNet\FrontendTest\Components\AbstractComponent;
+use ProtectedNet\FrontendTest\Components\Link\Link;
+use function str_repeat;
 
 class Nav extends AbstractComponent
 {
@@ -83,6 +89,35 @@ class Nav extends AbstractComponent
   {
     parent::_requireResources($manager);
     $manager->requireJs('ts/nav.c.js');
+  }
+
+  protected function _getContentForRender()
+  {
+    return Div::create(
+      Div::create(
+        Div::create(
+          Image::create($this->getImg('logo.png'), 'Our Logo')->addClass($this->getElementName('logo'))
+        )->addClass('cell', 'small-3'),
+        Div::create(
+          Link::i(str_repeat(Span::create(), 3))->addClass($this->getElementName('burger-menu'))
+            ->addAttributes(["trigger" => true]),
+          $this->_buildNavList()
+        )->addClass('cell', 'small-9')
+      )->addClass('grid-x')
+    )->addClass('grid-container');
+  }
+
+  protected function _buildNavList()
+  {
+    $items = [];
+    foreach($this->getNavItems() as $key => $navItem)
+    {
+      $items[] = ListItem::create(
+        $navItem->addClass($this->getElementName('cta'))
+      )->addClass($this->getElementName('list', 'item'));
+    }
+
+    return UnorderedList::create(...$items)->addClass($this->getElementName('list'));
   }
 
 }

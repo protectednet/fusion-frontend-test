@@ -26,6 +26,8 @@ We're interested in seeing how you break the design into its relevant parts, whe
 
 Overall please remember that you're applying for a frontend position so it's important that the lander looks good and there's clear attention to detail throughout. If your running out of time feel free to leave out the last section as we'd rather have something of high quality than all sections completed but to a lower standard.
 
+As a side note please look into how the components have being built and try to follow the logic that has been previously implemented. Where possible we're trying to reduce file structure so a lot of the html is done in php, using Glimpse tags. 
+
 ### Brief Update
 
 I've also added a place to store traits, traits are useful for handling things that may be needed across multiple components like sizing and ordering and alignment. You can find these traits in the (src/Traits) folder.
