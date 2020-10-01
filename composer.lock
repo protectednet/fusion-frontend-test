@@ -278,16 +278,16 @@
         },
         {
             "name": "packaged/context",
-            "version": "1.5.0",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/packaged/context.git",
-                "reference": "5586c241af0807abc3bbb18c274705d0921af557"
+                "reference": "ada8c6229f2cc08cc537ab4e75a93405a045473c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/packaged/context/zipball/5586c241af0807abc3bbb18c274705d0921af557",
-                "reference": "5586c241af0807abc3bbb18c274705d0921af557",
+                "url": "https://api.github.com/repos/packaged/context/zipball/ada8c6229f2cc08cc537ab4e75a93405a045473c",
+                "reference": "ada8c6229f2cc08cc537ab4e75a93405a045473c",
                 "shasum": ""
             },
             "require": {
@@ -317,20 +317,20 @@
                 }
             ],
             "description": "Context",
-            "time": "2020-07-28T13:23:10+00:00"
+            "time": "2020-09-09T12:56:14+00:00"
         },
         {
             "name": "packaged/context-i18n",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/packaged/context-i18n.git",
-                "reference": "9911ceff5cbc87194605fe6b063db8938cda33eb"
+                "reference": "06feca53ff260ed55b1d209f5c5cdbfc839ee0d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/packaged/context-i18n/zipball/9911ceff5cbc87194605fe6b063db8938cda33eb",
-                "reference": "9911ceff5cbc87194605fe6b063db8938cda33eb",
+                "url": "https://api.github.com/repos/packaged/context-i18n/zipball/06feca53ff260ed55b1d209f5c5cdbfc839ee0d9",
+                "reference": "06feca53ff260ed55b1d209f5c5cdbfc839ee0d9",
                 "shasum": ""
             },
             "require": {
@@ -358,7 +358,7 @@
                 }
             ],
             "description": "I18n Context",
-            "time": "2020-07-15T13:33:00+00:00"
+            "time": "2020-09-06T21:19:11+00:00"
         },
         {
             "name": "packaged/di-container",
@@ -402,16 +402,16 @@
         },
         {
             "name": "packaged/dispatch",
-            "version": "2.12.0",
+            "version": "2.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/packaged/dispatch.git",
-                "reference": "71d332858ef46ff66b5f5c237e5c313a56ea61ab"
+                "reference": "ac418e84fa593cb3a5f8e742f59a7d546bb29a81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/packaged/dispatch/zipball/71d332858ef46ff66b5f5c237e5c313a56ea61ab",
-                "reference": "71d332858ef46ff66b5f5c237e5c313a56ea61ab",
+                "url": "https://api.github.com/repos/packaged/dispatch/zipball/ac418e84fa593cb3a5f8e742f59a7d546bb29a81",
+                "reference": "ac418e84fa593cb3a5f8e742f59a7d546bb29a81",
                 "shasum": ""
             },
             "require": {
@@ -445,7 +445,7 @@
                 }
             ],
             "description": "Asset Management Middleware for Stack PHP",
-            "time": "2020-07-17T16:04:43+00:00"
+            "time": "2020-09-07T21:54:48+00:00"
         },
         {
             "name": "packaged/docblock",
@@ -645,16 +645,16 @@
         },
         {
             "name": "packaged/helpers",
-            "version": "2.10.3",
+            "version": "2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/packaged/helpers.git",
-                "reference": "1e4b49e2b848afb967e9ff16bdd911caceb22ecb"
+                "reference": "7db8fbc1b7b439315bd4846e35463ed3b69f11d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/packaged/helpers/zipball/1e4b49e2b848afb967e9ff16bdd911caceb22ecb",
-                "reference": "1e4b49e2b848afb967e9ff16bdd911caceb22ecb",
+                "url": "https://api.github.com/repos/packaged/helpers/zipball/7db8fbc1b7b439315bd4846e35463ed3b69f11d9",
+                "reference": "7db8fbc1b7b439315bd4846e35463ed3b69f11d9",
                 "shasum": ""
             },
             "require": {
@@ -682,7 +682,7 @@
                 }
             ],
             "description": "Generic PHP Helper Classes",
-            "time": "2020-07-08T15:11:31+00:00"
+            "time": "2020-08-11T15:04:23+00:00"
         },
         {
             "name": "packaged/http",
@@ -856,16 +856,16 @@
         },
         {
             "name": "packaged/ui",
-            "version": "1.6.1",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/packaged/ui.git",
-                "reference": "3798f0c3a988ccf2483237da040b1f4edc6b6edd"
+                "reference": "750e2b0ec9a4f22e51605ea5f19195e72cd4ef1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/packaged/ui/zipball/3798f0c3a988ccf2483237da040b1f4edc6b6edd",
-                "reference": "3798f0c3a988ccf2483237da040b1f4edc6b6edd",
+                "url": "https://api.github.com/repos/packaged/ui/zipball/750e2b0ec9a4f22e51605ea5f19195e72cd4ef1f",
+                "reference": "750e2b0ec9a4f22e51605ea5f19195e72cd4ef1f",
                 "shasum": ""
             },
             "require": {
@@ -892,7 +892,7 @@
                 }
             ],
             "description": "User Interface",
-            "time": "2020-07-03T20:31:43+00:00"
+            "time": "2020-08-13T13:20:13+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1042,16 +1042,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651"
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e878a14a65245fbe78f8080eba03b47c3b705651",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
                 "shasum": ""
             },
             "require": {
@@ -1083,7 +1083,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-06-27T10:12:23+00:00"
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "psr/container",
@@ -1183,16 +1183,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.4.11",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "55d07021da933dd0d633ffdab6f45d5b230c7e02"
+                "reference": "90933b39c7b312fc3ceaa1ddeac7eb48cb953124"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/55d07021da933dd0d633ffdab6f45d5b230c7e02",
-                "reference": "55d07021da933dd0d633ffdab6f45d5b230c7e02",
+                "url": "https://api.github.com/repos/symfony/console/zipball/90933b39c7b312fc3ceaa1ddeac7eb48cb953124",
+                "reference": "90933b39c7b312fc3ceaa1ddeac7eb48cb953124",
                 "shasum": ""
             },
             "require": {
@@ -1256,20 +1256,34 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2020-07-06T13:18:39+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-15T07:58:55+00:00"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.4.11",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "3675676b6a47f3e71d3ab10bcf53fb9239eb77e6"
+                "reference": "ff509ca7a73641bdbd7b56169a9004e64a58451d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/3675676b6a47f3e71d3ab10bcf53fb9239eb77e6",
-                "reference": "3675676b6a47f3e71d3ab10bcf53fb9239eb77e6",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/ff509ca7a73641bdbd7b56169a9004e64a58451d",
+                "reference": "ff509ca7a73641bdbd7b56169a9004e64a58451d",
                 "shasum": ""
             },
             "require": {
@@ -1311,20 +1325,34 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2020-07-23T09:48:09+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-13T05:00:26+00:00"
         },
         {
             "name": "symfony/mime",
-            "version": "v5.1.3",
+            "version": "v5.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "149fb0ad35aae3c7637b496b38478797fa6a7ea6"
+                "reference": "4404d6545125863561721514ad9388db2661eec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/149fb0ad35aae3c7637b496b38478797fa6a7ea6",
-                "reference": "149fb0ad35aae3c7637b496b38478797fa6a7ea6",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/4404d6545125863561721514ad9388db2661eec5",
+                "reference": "4404d6545125863561721514ad9388db2661eec5",
                 "shasum": ""
             },
             "require": {
@@ -1374,7 +1402,21 @@
                 "mime",
                 "mime-type"
             ],
-            "time": "2020-07-23T10:04:31+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-02T16:23:27+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1891,16 +1933,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v2.1.3",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442"
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/58c7475e5457c5492c26cc740cc0ad7464be9442",
-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1",
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1",
                 "shasum": ""
             },
             "require": {
@@ -1913,7 +1955,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -1949,7 +1991,21 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2020-07-06T13:23:11+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-07T11:33:47+00:00"
         },
         {
             "name": "tedivm/jshrink",
@@ -2059,5 +2115,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.3.2"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }

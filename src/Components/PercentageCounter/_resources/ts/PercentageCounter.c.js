@@ -174,9 +174,9 @@ var PercentageCounter = /** @class */ (function (_super) {
                 startCounter++;
                 _this.getComponentElement().html(startCounter + "%");
             }
-        }, 1000);
+        }, 100);
     };
-    PercentageCounter.selector = 'percentage-counter-component';
+    PercentageCounter.selector = 'percentage-counter';
     return PercentageCounter;
 }(AbstractComponent_1.AbstractComponent));
 new AbstractComponent_1.ComponentLoader(PercentageCounter);

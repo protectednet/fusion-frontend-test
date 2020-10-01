@@ -56,7 +56,7 @@ class Link extends AbstractComponent
    */
   protected function _getContentForRender()
   {
-    return $this->_content;
+    return new SafeHtml($this->_content);
   }
 
 }
