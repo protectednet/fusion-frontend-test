@@ -1,0 +1,66 @@
+<?php
+
+/** @var $this Home */
+
+use Packaged\Glimpse\Tags\Div;
+use PackagedUi\FontAwesome\FaIcon;
+use PackagedUi\FontAwesome\FaIcons;
+use ProtectedNet\FrontendTest\Components\Button\Button;
+use ProtectedNet\FrontendTest\Components\FeatureCard\FeatureCard;
+use ProtectedNet\FrontendTest\Components\IconWrapper\IconWrapper;
+use ProtectedNet\FrontendTest\Components\PercentageCounter\PercentageCounter;
+use ProtectedNet\FrontendTest\Enum\Breakpoints;
+use ProtectedNet\FrontendTest\Pages\Home\Home;
+
+?>
+
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell text-center">
+      <h1 class="mt-10 mb-10"><strong>About</strong> Us</h1>
+    </div>
+  </div>
+
+  <div class="grid-x about-us-section grid-padding-y">
+    <div class="cell medium-offset-1 medium-5">
+      <?=
+      FeatureCard::i()
+        ->setTitle('Feature Card Icons')
+        ->setDescription(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        )
+        ->setIcon($this->getIcon(FaIcons::BRIEFCASE))
+        ->textCenter(Breakpoints::SMALL())
+        ->iconCenter(Breakpoints::SMALL())
+        ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+      ?>
+    </div>
+    <div class="cell medium-5 end">
+      <?=
+      FeatureCard::i()
+        ->setTitle('Loreim ipsum dolor sit amet')
+        ->setDescription(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        )
+        ->setIcon($this->getIcon(FaIcons::COMMENTS))
+        ->textCenter(Breakpoints::SMALL())
+        ->iconCenter(Breakpoints::SMALL())
+        ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+      ?>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell text-center ">
+      <h2 class="mt-10 mb-10">Button examples</h2>
+      <?= Button::i('Icon Left Example')->iconLeft("<i class='fa fa-chevron-left'></i>") ?>
+      <?= Button::i('Icon Right Example')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,46 @@
+@mixin breakpoint-component($classname: null) {
+
+  @if($classname) {
+    &--small-#{$classname} {
+      @include breakpoint(small only) {
+        @content ();
+      }
+    }
+
+    &--medium-#{$classname} {
+      @include breakpoint(medium only) {
+        @content ();
+      }
+    }
+
+    &--large-#{$classname} {
+      @include breakpoint(large) {
+        @content ();
+      }
+    }
+  }
+  @else
+  {
+    @content ();
+
+    &--small {
+      @include breakpoint(small only) {
+        @content ();
+      }
+    }
+
+    &--medium {
+      @include breakpoint(medium only) {
+        @content ();
+      }
+    }
+
+    &--large {
+      @include breakpoint(large) {
+        @content ();
+      }
+    }
+  }
+
+
+}

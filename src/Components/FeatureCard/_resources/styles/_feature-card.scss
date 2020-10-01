@@ -1,0 +1,46 @@
+@import "base";
+
+$this: ".feature-card";
+
+#{$this} {
+  &__icon {
+    font-size: 50px;
+    padding: 0 25px;
+
+    * {
+      font-size: inherit;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  @include breakpoint-component('icon-left') {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include breakpoint-component('icon-right') {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @include breakpoint-component('icon-center') {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

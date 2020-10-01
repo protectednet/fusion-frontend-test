@@ -1,0 +1,81 @@
+@import 'base';
+
+$this: ".icon-wrapper";
+
+#{$this} {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height: auto;
+  width: auto;
+  line-height: 1;
+
+  > * {
+    position: relative;
+  }
+
+  &--circle {
+    border-radius: 50%;
+  }
+
+  &--border {
+    &-primary {
+      border: 2px solid $theme-color-primary;
+    }
+
+    &-light {
+      border: 2px solid white;
+    }
+
+    &-dark {
+      border: 2px solid black;
+    }
+  }
+
+  &--bg {
+    &-primary {
+      background-color: $theme-color-primary;
+    }
+
+    &-light {
+      background-color: white;
+    }
+
+    &-dark {
+      background-color: black;
+    }
+  }
+
+  &--color {
+    &-primary {
+      color: $theme-color-primary;
+    }
+
+    &-light {
+      color: white;
+    }
+
+    &-dark {
+      color: black;
+    }
+  }
+
+  &--bottom-shadow {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  }
+
+  @include sized-component() using($i) {
+    width: calc(15px + (10px * #{$i}));
+    height: calc(15px + (10px * #{$i}));
+
+    > * {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    }
+  }
+}
+

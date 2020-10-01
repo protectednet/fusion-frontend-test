@@ -1,0 +1,119 @@
+.slide-one {
+  position: relative;
+}
+.slide-one__content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide-one__title {
+  font-size: 40px;
+  color: white;
+  margin-top: 160px;
+}
+.slide-one__text {
+  font-size: 23px;
+  color: white;
+}
+.slide-one__list {
+  padding: 0;
+  color: white;
+  font-size: 23px;
+}
+.slide-one__background-img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+@media print, screen and (max-width: 39.99875em) {
+  .slide-one__title {
+    font-size: 25px;
+    margin-top: 130px;
+  }
+  .slide-one__text {
+    font-size: 17px;
+  }
+  .slide-one__list {
+    font-size: 17px;
+  }
+}
+
+.slide-three__background-img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slide-two {
+  position: relative;
+}
+.slide-two__content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide-two__title {
+  color: white;
+  text-align: center;
+  max-width: 475px;
+  margin: 200px auto auto;
+  font-size: 60px;
+}
+.slide-two__background-img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+.slide-two__cta-holder {
+  margin-top: 20px;
+}
+.slide-two .btn {
+  background: none;
+}
+.slide-two .btn__content-holder {
+  background-color: rgba(35, 186, 133, 0.9);
+  padding: 13px 31px;
+  font-size: 23px;
+  font-weight: 400;
+}
+.slide-two .btn__icon-holder {
+  background-color: rgba(54, 54, 54, 0.9);
+  padding: 0 25px;
+  font-size: 20px;
+}
+.slide-two .btn__icon-holder:before {
+  display: none;
+}
+.slide-two .btn:hover .btn__content-holder, .slide-two .btn:focus .btn__content-holder {
+  background-color: rgba(29, 153, 109, 0.915);
+}
+.slide-two .btn:hover .btn__icon-holder, .slide-two .btn:focus .btn__icon-holder {
+  background-color: rgba(44, 44, 44, 0.915);
+}
+@media print, screen and (max-width: 39.99875em) {
+  .slide-two__title {
+    font-size: 30px;
+    margin-top: 170px;
+  }
+  .slide-two .btn {
+    width: 100%;
+  }
+  .slide-two .btn__content-holder {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .slide-two .btn__icon-holder {
+    background-color: rgba(54, 54, 54, 0.9);
+    padding: 0 25px;
+    font-size: 13px;
+  }
+  .slide-two .btn__icon-holder:before {
+    display: none;
+  }
+}

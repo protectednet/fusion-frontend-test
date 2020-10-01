@@ -1,0 +1,27 @@
+@mixin sized-component() {
+  &--size {
+    @for $i from 0 through 10 {
+      &#{$i} {
+        @content ($i);
+
+        &--small {
+          @include breakpoint(small only) {
+            @content ($i);
+          }
+        }
+
+        &--medium {
+          @include breakpoint(medium only) {
+            @content ($i);
+          }
+        }
+
+        &--large {
+          @include breakpoint(large) {
+            @content ($i);
+          }
+        }
+      }
+    }
+  }
+}

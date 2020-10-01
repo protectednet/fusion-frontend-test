@@ -1,0 +1,25 @@
+env: "dev" # dev | test | prod
+gulp:
+  font:
+    src:
+      - "./src/_assets/fonts/**/*"
+    dist: "./resources/fonts/"
+  scss:
+    inputPaths:
+      - "node_modules"
+      - "node_modules/foundation-sites/scss"
+      - "src/_assets/styles"
+  js:
+    concat:
+      files:
+        - "./node_modules/jquery/dist/jquery.js"
+      dist: "./resources/js/"
+  errorLog: "./gulp/errors.json"
+assets:
+  src:
+    - "./src/**/*"
+  dist: "./src/"
+cubex:
+  port: 9895
+  base: "./public"
+  proxyPort: 3002

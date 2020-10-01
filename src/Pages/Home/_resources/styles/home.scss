@@ -1,0 +1,15 @@
+$icon-wrapper: ".icon-wrapper";
+
+.about-us-section {
+  #{$icon-wrapper} {
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+
+@include breakpoint(small only) {
+
+
+}

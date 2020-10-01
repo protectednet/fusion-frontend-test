@@ -1,0 +1,11 @@
+@import 'base';
+
+$this: ".link";
+
+#{$this} {
+  color: white;
+
+  &:hover {
+    color: $theme-color-primary;
+  }
+}

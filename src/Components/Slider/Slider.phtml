@@ -1,0 +1,10 @@
+<?php
+/** @var $this Slider */
+
+use ProtectedNet\FrontendTest\Components\Slider\Slider;
+
+?>
+
+<?php foreach($this->getSlides() as $slide): ?>
+  <?= $slide->produceSafeHTML() ?>
+<?php endforeach; ?>

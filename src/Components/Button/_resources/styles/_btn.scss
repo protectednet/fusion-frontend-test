@@ -1,0 +1,82 @@
+@import 'base';
+
+$this: ".btn";
+
+#{$this} {
+  background-color: $theme-color-primary;
+  color: white;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+
+  &__content-holder {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &--ghost {
+    background-color: transparent;
+    border: 1px solid $theme-color-primary;
+
+    #{$this}__content-holder {
+      padding: 3px 8px;
+    }
+
+    &:hover, &:focus {
+      background-color: $theme-color-primary;
+      color: white;
+    }
+  }
+
+
+  &--icon {
+
+    #{$this}__icon-holder {
+      position: relative;
+      height: 100%;
+      padding: 0 15px;
+      transition: all 0.3s ease-in-out;
+
+      * {
+        transform: translate(0, -50%);
+        top: 50%;
+        position: relative;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 50%;
+        width: 1px;
+        background: white;
+        display: inline-block;
+        transform: translate(0, -50%);
+        top: 50%;
+      }
+    }
+
+    &-right {
+      #{$this}__icon-holder {
+        &:before {
+          left: 0;
+        }
+      }
+    }
+
+    &-left {
+      #{$this}__icon-holder {
+        &:before {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &:hover, &:focus {
+    color: white;
+    background: mix(black, $theme-color-primary, 15%);
+  }
+}
