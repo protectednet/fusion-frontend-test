@@ -4,6 +4,7 @@ namespace ProtectedNet\FrontendTest\Components\Slider;
 use Exception;
 use Packaged\Dispatch\ResourceManager;
 use Packaged\SafeHtml\ISafeHtmlProducer;
+use Packaged\SafeHtml\SafeHtml;
 use ProtectedNet\FrontendTest\Components\AbstractComponent;
 
 class Slider extends AbstractComponent
@@ -95,6 +96,20 @@ class Slider extends AbstractComponent
     parent::_requireResources($manager);
     $manager->requireJs('ts/slider.c.js');
     $manager->requireCss('styles/slick-slider.min.css');
+  }
+
+  /**
+   * @return array|SafeHtml|null
+   */
+  protected function _getContentForRender()
+  {
+    $slides = [];
+
+    foreach($this->getSlides() as $slide) {
+        $slides[] = $slide->produceSafeHTML();
+    }
+
+    return $slides;
   }
 
 }
