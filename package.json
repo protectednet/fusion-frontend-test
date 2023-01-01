@@ -33,12 +33,12 @@
     "js-yaml": "^3.14.0",
     "postcss-flexibility": "^2.0.0",
     "slick-carousel": "^1.8.1",
-    "ts-loader": "^5.4.5",
+    "ts-loader": "^9.4.2",
     "ts-transformer-imports": "^0.2.0",
     "ttypescript": "^1.5.10",
     "typescript": "^3.9.7",
-    "webpack": "^4.44.1",
-    "webpack-stream": "^5.2.1",
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0",
     "yargs": "^13.3.2"
   }
 }
